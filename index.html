@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEasy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h2>🛒 ShopEasy</h2>
+    <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <div class="controls">
+    <input id="search" type="text" placeholder="Search products..." />
+    <select id="category"><option value="all">All Categories</option></select>
+    <select id="sort">
+      <option value="">Sort by</option>
+      <option value="low">Price: Low to High</option>
+      <option value="high">Price: High to Low</option>
+    </select>
+  </div>
+
+  <p id="status">Loading products...</p>
+  <main id="products" class="grid"></main>
+
+  <aside id="cartPanel" class="cart">
+    <div class="cart-head"><h3>Your Cart</h3><button id="closeCart">✕</button></div>
+    <div id="cartItems"></div>
+    <h3 id="total">Total: $0.00</h3>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
